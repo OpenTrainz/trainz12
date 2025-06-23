@@ -21,6 +21,7 @@ add_executable(trainz ${trainz_sources})
 # target_link_libraries(winyl shlwapi)
 
 set_property(TARGET trainz PROPERTY CXX_STANDARD 23)
+set_property(TARGET trainz PROPERTY WIN32_EXECUTABLE ON)
 set_property(TARGET trainz PROPERTY COMPILE_WARNING_AS_ERROR ON)
 
 # target_include_directories(winyl PRIVATE ${includes})
