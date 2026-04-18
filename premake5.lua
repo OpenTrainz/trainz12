@@ -13,5 +13,6 @@ workspace "Trainz12"
 
    --DIST = "${wks.location}/dist/TramDepot/"
 
+   include "src/trainzPreLauncher/trainz.lua"
    include "src/trainz/trainz.lua"
    --include "src/Alloy/alloy.lua"

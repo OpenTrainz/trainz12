@@ -1,13 +1,12 @@
-project "Trainz"
+project "TrainzPreLauncher"
    characterset "Unicode"
    kind "WindowedApp"
    language "C++"
    cppdialect "C++23"
    buildstlmodules "On"
-   targetname "trainz"
 
-   targetdir (_MAIN_SCRIPT_DIR.."/build/%{cfg.buildcfg}/bin/")
-   objdir (_MAIN_SCRIPT_DIR.."/build/obj/trainz/%{cfg.buildcfg}/")
+   targetdir (_MAIN_SCRIPT_DIR.."/build/%{cfg.buildcfg}/")
+   objdir (_MAIN_SCRIPT_DIR.."/build/obj/trainz_exe/%{cfg.buildcfg}/")
 
    warnings "Extra"
 
@@ -15,7 +14,7 @@ project "Trainz"
 
    includedirs {"."}
 
-   --links {"Shlwapi"}
+   links {"Shlwapi"}
 
    buildoptions {"/utf-8"}
 
