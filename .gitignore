@@ -51,9 +51,17 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-build/*
+build/
+projects/*
 *.zip
 *.7z
 *.rar
 .cache/*
 compile_commands.json
+
+.vs/
+.vscode/
+.xmake/
+
+*.vcxproj*
+*.sln*
